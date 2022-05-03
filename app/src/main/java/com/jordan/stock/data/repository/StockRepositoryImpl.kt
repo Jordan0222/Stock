@@ -1,7 +1,6 @@
 package com.jordan.stock.data.repository
 
 import com.jordan.stock.data.csv.CSVParser
-import com.jordan.stock.data.csv.CompanyListingsParser
 import com.jordan.stock.data.local.StockDatabase
 import com.jordan.stock.data.mapper.toCompanyListing
 import com.jordan.stock.data.mapper.toCompanyListingEntity
