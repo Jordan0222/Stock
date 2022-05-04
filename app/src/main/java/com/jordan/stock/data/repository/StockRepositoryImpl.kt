@@ -31,6 +31,7 @@ class StockRepositoryImpl @Inject constructor(
         return flow {
             emit(Resource.Loading(true))
 
+            // 初始化時先緩存全部
             val localListings = dao.searchCompanyListing(query)
             emit(Resource.Success(
                 data = localListings.map { it.toCompanyListing() })
